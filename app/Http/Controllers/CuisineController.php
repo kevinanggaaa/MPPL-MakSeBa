@@ -5,15 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\Cuisine;
 use Illuminate\Http\Request;
 use App\Http\Requests\CuisineRequest;
+use Illuminate\Support\Facades\Auth;
+use Session;
 
 class CuisineController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $cuisines = Cuisine::all();
 
@@ -27,9 +33,7 @@ class CuisineController extends Controller
      */
     public function create()
     {
-        $cuisines = Cuisine::all();
-
-        return view('cuisines.create', compact('cuisines'));
+        return view('cuisines.create');
     }
 
     /**
@@ -40,11 +44,20 @@ class CuisineController extends Controller
      */
     public function store(CuisineRequest $request)
     {
+        $file = $request['photo'];
+
+        $nama_file = time() . '_' . $file->getClientOriginalName();
+
+        // isi dengan nama folder tempat kemana file diupload
+        $tujuan_upload = 'cuisines_photo';
+        $file->move($tujuan_upload, $nama_file);
+
         Cuisine::create([
             'cuisine_name' => $request['cuisine_name'],
             'description' => $request['description'],
             'ingredients' => $request['ingredients'],
             'recipe' => $request['recipe'],
+            'photo' => $nama_file,
         ]);
 
         return redirect()->route('cuisines.index')

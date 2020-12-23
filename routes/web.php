@@ -18,10 +18,29 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/cuisines/index');
 });
 
 Route::resource('/categories', CategoryController::class);
 Route::resource('/cuisines', CuisineController::class);
 Route::resource('/profiles', ProfileController::class);
 Route::resource('/users', UserController::class);
+
+Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');
+Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@storeUser')->name('register');
+
+
+Route::get('/login', 'App\Http\Controllers\Auth\LoginController@login')->name('login');
+Route::post('/login', 'App\Http\Controllers\Auth\LoginController@authenticate');
+Route::get('/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+// -----------------------------forget password ------------------------------
+Route::get('forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@getEmail')->name('forget-password');
+Route::post('forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@postEmail')->name('forget-password');
+
+Route::get('reset-password/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@getPassword');
+Route::post('reset-password', 'App\Http\Controllers\Auth\ResetPasswordController@updatePassword');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

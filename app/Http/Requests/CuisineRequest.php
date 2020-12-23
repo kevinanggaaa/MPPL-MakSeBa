@@ -28,6 +28,7 @@ class CuisineRequest extends FormRequest
             'description' => 'required|string',
             'ingredients' => 'required|string',
             'recipe' => 'required|string',
+            'photo' => 'file|image|mimes:jpeg,png,jpg|max:2048',
         ];
     }
 }
