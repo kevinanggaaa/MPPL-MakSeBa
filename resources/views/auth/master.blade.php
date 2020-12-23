@@ -13,7 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <!-- --------------style css --------------->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ asset('/auth/style.css')}}">
 
 </head>
 

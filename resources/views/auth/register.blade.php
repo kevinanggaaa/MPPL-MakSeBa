@@ -4,7 +4,9 @@
         @csrf
         <div class="text-center">
             <a href="index.html" aria-label="Space">
-                <img class="mb-3" src="assets/image/logo.png" alt="Logo" width="60" height="60">
+                <div class="logo">
+                    <a href="#">MakSeBa</a>
+                </div>
             </a>
         </div>
         <div class="text-center mb-4">

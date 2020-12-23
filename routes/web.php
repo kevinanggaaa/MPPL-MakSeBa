@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CuisineController;
@@ -18,7 +19,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('/cuisines/index');
+    return view('/landingpage');
 });
 
 Route::resource('/categories', CategoryController::class);

@@ -104,7 +104,7 @@
             @else
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="single-best-receipe-area mb-30">
-                    <img class="profile-user-img img-fluid img-circle" src="{{ url('/cuisines_photo/'.$cuisine->photo) }}" alt="User profile picture">
+                    <img class="img-fluid" src="{{ url('/cuisines_photo/'.$cuisine->photo) }}" alt="User profile picture">
                     <div class="receipe-content">
                         <a href="{{ route('cuisines.show',$cuisine->id) }}">
                             <h5>{{ $cuisine->cuisine_name }}</h5>

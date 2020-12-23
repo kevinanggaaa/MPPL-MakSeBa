@@ -66,12 +66,9 @@
                     <!-- Top Social Info -->
                     <div class="col-12 col-sm-6">
                         <div class="top-social-info text-right">
-                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <div class="mb-3">
+                                <p class="text-muted"><a href="{{route('logout')}}">Logout</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
