@@ -52,12 +52,15 @@ class CuisineController extends Controller
         $tujuan_upload = 'cuisines_photo';
         $file->move($tujuan_upload, $nama_file);
 
+        $user = Auth::user();
         Cuisine::create([
             'cuisine_name' => $request['cuisine_name'],
             'description' => $request['description'],
             'ingredients' => $request['ingredients'],
             'recipe' => $request['recipe'],
             'photo' => $nama_file,
+            'user_id' => $user->id,
+            'video' => $request['video']
         ]);
 
         return redirect()->route('cuisines.index')
@@ -83,7 +86,6 @@ class CuisineController extends Controller
      */
     public function edit(Cuisine $cuisine)
     {
-        $cuisines = Cuisine::all();
 
         return view('cuisines.edit', compact('cuisine'));
     }

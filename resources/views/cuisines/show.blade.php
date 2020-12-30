@@ -34,7 +34,11 @@
                     </tr>
                 </tbody>
             </table>
-
+            <div class="text-center">
+                <video controls width="50%" height="480">
+                    <source src="{{ url('/recipes_video/'.$cuisine->video) }}" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 </div>

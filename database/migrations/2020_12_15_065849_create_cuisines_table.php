@@ -16,16 +16,18 @@ class CreateCuisinesTable extends Migration
         Schema::create('cuisines', function (Blueprint $table) {
             $table->id();
             $table->string('photo')->nullable();
+            $table->string('video')->nullable();
             $table->string('cuisine_name');
             $table->string('description');
             $table->string('ingredients');
             $table->string('recipe');
-            // $table->foreignId('user_id')->nullable()->unsigned();
+            $table->string('verification')->default('0');
+            $table->foreignId('user_id')->nullable()->unsigned();
             $table->timestamps();
 
-            // $table->foreign('user_id')
-            //     ->references('id')
-            //     ->on('users');
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users');
         });
     }
 

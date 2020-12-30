@@ -66,9 +66,17 @@
                     <!-- Top Social Info -->
                     <div class="col-12 col-sm-6">
                         <div class="top-social-info text-right">
-                            <div class="mb-3">
-                                <p class="text-muted"><a href="{{route('logout')}}">Logout</a></p>
-                            </div>
+                            @hasanyrole('admin|video-creator')
+                            <a href="{{route('admins.index')}}">
+                                @role('admin')
+                                Admin
+                                @endrole
+                                @role('video-creator')
+                                Video Upload
+                                @endrole
+                            </a>
+                            @endhasanyrole
+                            <a href="{{route('logout')}}">Logout</a>
                         </div>
                     </div>
                 </div>

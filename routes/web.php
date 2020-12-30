@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\VideoController;
 use App\Http\Controllers\CuisineController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
@@ -20,12 +22,14 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('/landingpage');
-});
+})->name('home');
 
 Route::resource('/categories', CategoryController::class);
 Route::resource('/cuisines', CuisineController::class);
 Route::resource('/profiles', ProfileController::class);
 Route::resource('/users', UserController::class);
+Route::resource('/admins', AdminController::class);
+Route::resource('/videos', VideoController::class);
 
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');
 Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@storeUser')->name('register');
@@ -44,4 +48,7 @@ Route::post('reset-password', 'App\Http\Controllers\Auth\ResetPasswordController
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::put('/admins/verification/{admin}', 'App\Http\Controllers\AdminController@verification')->name('admins.verification');
+
+Route::put('/videos/cancel/{video}', 'App\Http\Controllers\VideoController@cancel')->name('videos.cancel');

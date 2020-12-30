@@ -52,7 +52,22 @@
                                 <input type="text" class="form-control" id="recipe" name="recipe" placeholder="Masukkan Cara Masak" value="{{old('recipe')}}" required>
                             </div>
                         </div>
+                        <div class="col-sm-6" style="display: flex; align-items: center">
+                            <p>Agree to make video of my recipe</p>
+                            <!-- radio -->
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="video" value="1" id="radio-video-a">
+                                    <label class="form-check-label" for="radio-video-a">Agree</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="video" value="0" id="radio-video-d">
+                                    <label class="form-check-label" for="radio-video-d">Disagree</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
 
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>

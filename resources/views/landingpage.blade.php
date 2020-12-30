@@ -27,7 +27,6 @@
             <h2>Resep Masakan Sejuta Rasa</h2>
         </div>
     </header>
-    <script src="{{asset ('/landingpage/landingpage.jpg')}}"></script>
 </body>
 
 </html>

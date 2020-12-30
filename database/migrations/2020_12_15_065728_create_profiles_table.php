@@ -18,12 +18,12 @@ class CreateProfilesTable extends Migration
             $table->string('photo')->nullable();
             $table->string('phone_number');
             $table->string('gender');
-            // $table->foreignId('user_id')->nullable()->unsigned();
+            $table->foreignId('user_id')->nullable()->unsigned();
             $table->timestamps();
 
-            // $table->foreign('user_id')
-            //     ->references('id')
-            //     ->on('users');
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users');
         });
     }
 
