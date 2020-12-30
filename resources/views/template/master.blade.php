@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Delicious - Food Blog Template | Home</title>
+    <title>MakSeBa - Masak Serba Bisa | Home</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('/template/img/core-img/favicon.ico')}}">
@@ -55,9 +55,9 @@
                         <div class="breaking-news">
                             <div id="breakingNewsTicker" class="ticker">
                                 <ul>
-                                    <li><a href="#">Hello World!</a></li>
-                                    <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                    <li><a href="#">Hello Delicious!</a></li>
+                                    <li><a href="#">Hello!</a></li>
+                                    <li><a href="#">Welcome to MakSeBa.</a></li>
+                                    <li><a href="#">Hello MakSeBa!</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                     <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="{{ asset('/template/img/core-img/logo.png')}}" alt=""></a>
+                        <a class="nav-brand" href="index.html"><img src="{{ asset('/template/img/core-img/makseba1.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -106,7 +106,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="{{route ('cuisines.index')}}">Home</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <!-- <li><a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="about.html">About Us</a></li>
@@ -174,7 +174,7 @@
                                         </div>
                                     </li>
                                     <li><a href="receipe-post.html">Receipies</a></li>
-                                    <li><a href="receipe-post.html">4 Vegans</a></li>
+                                    <li><a href="receipe-post.html">4 Vegans</a></li> -->
                                     <li><a href="{{route ('cuisines.create')}}">Add Recipe</a></li>
                                 </ul>
 
@@ -288,7 +288,7 @@
                     </div>
                     <!-- Footer Logo -->
                     <div class="footer-logo">
-                        <a href="index.html"><img src="{{ asset('/template/img/core-img/logo.png')}}" alt=""></a>
+                        <a href="index.html"><img src="{{ asset('/template/img/core-img/makseba1.png')}}" alt=""></a>
                     </div>
                     <!-- Copywrite -->
                     <p>

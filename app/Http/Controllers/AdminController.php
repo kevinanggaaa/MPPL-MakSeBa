@@ -42,7 +42,7 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CuisineRequest $request)
+    public function store(Request $request)
     {
         $file = $request['photo'];
 
@@ -96,7 +96,7 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(CuisineRequest $request, Cuisine $admin)
+    public function update(Request $request, Cuisine $admin)
     {
         $admin->cuisine_name = $request['cuisine_name'];
         $admin->description = $request['description'];

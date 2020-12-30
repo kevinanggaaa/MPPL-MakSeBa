@@ -12,7 +12,8 @@
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <!-- Add icons to the links using the .nav-icon class
                               with font-awesome or any other icon font library -->
-                    <h2 class="text-center font-weight-bold mb-4"><span style="color:red;"><i class="nav-icon fas fa-cross "></i>PMK</span> <span style="color:#3366ff;">ITS</span></h2>
+                    <h2 class="text-center font-weight-bold mb-4"><span style="color:red;">MakSeBa</span></h2>
+
 
                 </ul>
 

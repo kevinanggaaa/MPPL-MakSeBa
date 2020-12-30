@@ -18,9 +18,9 @@ class CreateCuisinesTable extends Migration
             $table->string('photo')->nullable();
             $table->string('video')->nullable();
             $table->string('cuisine_name');
-            $table->string('description');
-            $table->string('ingredients');
-            $table->string('recipe');
+            $table->text('description');
+            $table->text('ingredients');
+            $table->text('recipe');
             $table->string('verification')->default('0');
             $table->foreignId('user_id')->nullable()->unsigned();
             $table->timestamps();
