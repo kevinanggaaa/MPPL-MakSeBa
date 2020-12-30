@@ -39,15 +39,7 @@
     <div class="col-md-9">
 
         <div class="card">
-            <div class="card-header p-2">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a class="nav-link active" href="#data-diri" data-toggle="tab">Data
-                            Diri</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#riwayat" data-toggle="tab">Riwayat</a>
-                    </li>
-                </ul>
-            </div><!-- /.card-header -->
+
             <div class="card-body">
                 <div class="tab-content">
 

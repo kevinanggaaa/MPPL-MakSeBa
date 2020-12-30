@@ -97,12 +97,13 @@
             </div>
         </div>
 
-        @if($cuisine->verification == "1")
+       
         <div class="row">
             @foreach ($cuisines as $index => $cuisine)
-            @if($index == 6)
+            @if($index == 9)
             break;
             @else
+            @if($cuisine->verification == "1")
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="single-best-receipe-area mb-30">
                     <img class="img-fluid" src="{{ url('/cuisines_photo/'.$cuisine->photo) }}" alt="User profile picture">
@@ -120,6 +121,7 @@
                     </div>
                 </div>
             </div>
+            @endif
             @endif
             @endforeach
             <!-- Single Best Receipe Area -->
@@ -236,7 +238,7 @@
                     </div>
                 </div> -->
         </div>
-        @endif
+        
     </div>
 </section>
 <!-- ##### Best Receipe Area End ##### -->

@@ -39,14 +39,14 @@
                                 </a>
                             </li>
                             @endrole
-                            @hasanyrole('video-creator|admin')
+                            @role('video-creator')
                             <li class="nav-item">
                                 <a href="{{route ('videos.index')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Videos</p>
                                 </a>
                             </li>
-                            @endhasanyrole
+                            @endrole
 
                             <!-- <li class="nav-item">
                                 <a href="{{route ('categories.index')}}" class="nav-link">
