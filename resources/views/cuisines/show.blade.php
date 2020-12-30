@@ -34,11 +34,13 @@
                     </tr>
                 </tbody>
             </table>
+            @if($cuisine->video != '0' && $cuisine->video != '1' && $cuisine->video != 0)
             <div class="text-center">
                 <video controls width="50%" height="480">
                     <source src="{{ url('/recipes_video/'.$cuisine->video) }}" type="video/mp4">
                 </video>
             </div>
+            @endif
         </div>
     </div>
 </div>
