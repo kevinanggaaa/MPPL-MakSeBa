@@ -65,17 +65,13 @@
 
                     <!-- Top Social Info -->
                     <div class="col-12 col-sm-6">
-                        <div class="top-social-info text-right">
-                            @hasanyrole('admin|video-creator')
-                            <a href="{{route('admins.index')}}">
-                                @role('admin')
-                                Admin
-                                @endrole
-                                @role('video-creator')
-                                Video Upload
-                                @endrole
-                            </a>
-                            @endhasanyrole
+                        <div class="top-social-info text-right">\
+                            @role('admin')
+                            <a href="{{route('admins.index')}}">Admin</a>
+                            @endrole
+                            @role('video-creator')
+                            <a href="{{route('videos.index')}}">Video Upload</a>
+                            @endrole
                             <a href="{{route('logout')}}">Logout</a>
                         </div>
                     </div>
