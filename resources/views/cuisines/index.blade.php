@@ -97,6 +97,7 @@
             </div>
         </div>
 
+        @if($cuisine->verification == "1")
         <div class="row">
             @foreach ($cuisines as $index => $cuisine)
             @if($index == 6)
@@ -235,6 +236,7 @@
                     </div>
                 </div> -->
         </div>
+        @endif
     </div>
 </section>
 <!-- ##### Best Receipe Area End ##### -->
