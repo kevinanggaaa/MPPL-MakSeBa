@@ -65,7 +65,7 @@
 
                     <!-- Top Social Info -->
                     <div class="col-12 col-sm-6">
-                        <div class="top-social-info text-right">\
+                        <div class="top-social-info text-right">
                             @role('admin')
                             <a href="{{route('admins.index')}}">Admin</a>
                             @endrole
