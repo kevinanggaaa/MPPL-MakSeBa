@@ -17,8 +17,7 @@
                 <a href="#">MakSeBa</a>
             </div>
             <div class="navbar">
-                <a href="{{route ('login')}}" class="Home">Login</a>
-                <a href="{{route ('register')}}">Register</a>
+                <a href="{{route ('cuisines.index')}}" class="Home">Home</a>
             </div>
         </nav>
         <!-- jumbotron -->

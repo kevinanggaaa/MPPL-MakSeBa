@@ -72,7 +72,14 @@
                             @role('video-creator')
                             <a href="{{route('videos.index')}}">Video Upload</a>
                             @endrole
+                            @guest
+                            <a href="{{route ('login')}}" class="Home">Login</a>
+                            <a href="{{route ('register')}}">Register</a>
+                            @endguest
+                            @auth
                             <a href="{{route('logout')}}">Logout</a>
+                            @endauth
+
                         </div>
                     </div>
                 </div>
@@ -87,7 +94,7 @@
                     <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="{{ asset('/template/img/core-img/makseba1.png')}}" alt=""></a>
+                        <a class="nav-brand" href="{{route ('home')}}"><img src="{{ asset('/template/img/core-img/makseba1.png')}}" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">

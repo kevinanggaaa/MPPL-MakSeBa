@@ -11,8 +11,8 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                            <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                            <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                            <h2 data-animation="fadeInUp" data-delay="300ms">Hamburger Homemade</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">Hamburger lezat dengan cita rasa khas Indonesia</p>
                             <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
                         </div>
                     </div>
@@ -26,8 +26,8 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                            <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                            <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                            <h2 data-animation="fadeInUp" data-delay="300ms">Salad Sehat</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">Salad sehat dengan gizi yang cocok untuk memenuhi asupan sehari-hari </p>
                             <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
                         </div>
                     </div>
@@ -41,8 +41,8 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                            <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                            <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                            <h2 data-animation="fadeInUp" data-delay="300ms">Fruit Smoothie</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">Smoothie yang terbuat dari buah buahan segar cocok untuk menjaga kesehatan tubuh</p>
                             <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-       
+
         <div class="row">
             @foreach ($cuisines as $index => $cuisine)
             @if($index == 9)
@@ -238,7 +238,7 @@
                     </div>
                 </div> -->
         </div>
-        
+
     </div>
 </section>
 <!-- ##### Best Receipe Area End ##### -->
